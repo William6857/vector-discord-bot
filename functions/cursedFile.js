@@ -9,7 +9,7 @@ cursedCommand: function cursedCommand(message) {
   const cursed5 = "https://i.imgur.com/hJ0DEX9.png";
   const cursed6 = "https://i.imgur.com/OAr6fhb.png";
   const cursed7 = "https://i.imgur.com/3VpkUek.png";
-  const cursed = [cursed1, cursed2, cursed3, cursed4, cursed5, cursed6, cursed7, cursed8];
+  const cursed = [cursed1, cursed2, cursed3, cursed4, cursed5, cursed6, cursed7];
   const cursedMath = Math.floor(Math.random() * cursed.length);
   const finalEmbed = new EmbedBuilder()
     .setColor(colorMessage)
