@@ -13,7 +13,7 @@ weatherCommand: function weatherCommand(message, args, longCommand) {
         } else {
             zipCode = msg.split("her in ")[1];
         }
-        if (zipCode === undefined || zipCode.length != 5 || parseInt(zipCode) === NaN) {
+        if (zipCode === undefined || zipCode.length != 5 || isNaN(zipCode)) {
             message.channel.send("Not a valid ZIP code! Follow the format #####. This only works for the U.S.A!")
                 .catch(console.error)
             return;
