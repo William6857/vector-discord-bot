@@ -1,6 +1,10 @@
 module.exports = {
 weatherCommand: function weatherCommand(message, args, longCommand) {
         const config = require('../protected/config.json');
+        if(!config.weatherAPI){
+            console.log("WeatherAPI key doesn't exist. Add one at '/protected/config.js'");
+            return;
+        };
         const weatherapiKey = config.weatherAPI; 
         const sunw1 = "https://i.imgur.com/dbJClV9.gif";
         const sunw2 = "https://i.imgur.com/qTO6lBE.gif";
