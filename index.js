@@ -43,7 +43,7 @@ const activities_list = [
   "with my owner in quarantine | hey vector help",
 ];
 
-client.on("ready", () => {
+client.on("clientReady", () => {
 	console.log('Ready!')
 	setInterval(() => {
 		const index = Math.floor(Math.random() * activities_list.length); 
