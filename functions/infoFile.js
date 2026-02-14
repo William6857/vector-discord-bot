@@ -8,7 +8,7 @@ function infoMain(message, args) {
       Math.floor((message.client.uptime % 3600000) / 60000), 
       Math.floor((message.client.uptime % 60000) / 1000),
     ];
-    const uptime = `${days} days (${hours} hours, ${minutes === 1 ? "1 minute" : `${minutes} minutes`}`;
+    const uptime = `${days} days (${hours} hours, ${minutes === 1 ? "1 minute" : `${minutes} minutes`})`;
     const finalEmbed = new EmbedBuilder()
       .setColor(colorMessage)
       .setTitle("Vector Bot Information")
