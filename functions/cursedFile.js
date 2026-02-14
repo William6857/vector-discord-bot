@@ -15,6 +15,6 @@ cursedCommand: function cursedCommand(message) {
   const finalEmbed = new EmbedBuilder()
     .setColor(colorMessage)
     .setImage(cursed[cursedMath]);
-  message.channel.send(finalEmbed);
+  message.channel.send({ embeds: [finalEmbed]});
 }
 };
